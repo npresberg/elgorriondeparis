@@ -1,0 +1,123 @@
+h1, h2, h3, h4, h5, h6 {
+	font-family: Satisfy, "Times new Roman";
+}
+
+/* Top bar */
+
+#top-bar {
+	background-color: #EF847C;
+	border:0;
+}
+	#top-bar .navbar-brand:hover {
+		background: transparent;
+	}
+
+		#top-bar .navbar-brand {
+			font-weight: bold;
+			font-size: 14px;
+		}
+			#top-bar .navbar-brand img {
+				margin-top: -7px;
+				margin-right: 12px;
+			}
+
+	#top-bar a {
+		color:white;
+	}
+
+	#top-bar .dropdown-menu a {
+		color: black;
+	}
+
+	#top-bar .open > a,
+	#top-bar a:hover {
+		background-color: #DAC694;
+	}
+
+	#top-bar .caret {
+		margin-left: 4px;
+	}
+
+/* Home */
+
+#home-logo {
+	position: relative;
+	width: 100%;
+	margin: 35px 0 0px;
+	height: 243px;
+	text-align: center;
+	background: url(../img/banderines.png) bottom center repeat-x;
+}
+	#home-logo .flower {
+		position: absolute;
+		top: 0;
+	}
+
+	@media (max-width: 833px) {
+	  #home-logo .flower { display: none; }
+	}
+
+	#home-logo .left {
+		left:0;
+	}
+
+	#home-logo .right {
+		right:0;
+	}
+
+#home-phrase {
+	background-color: #009540;
+	padding: 40px 0;
+}
+	#home-phrase p {
+		font-size: 18px;
+		font-style: italic;
+		color: white;
+		margin: 0;
+	}
+
+#home-about {
+	background: #FBFBF3;
+}
+
+	#home-about p {
+		text-align: justify;
+	}
+
+#home-features {}
+
+	#home-features .fa {
+		margin-right: 7px;
+	}
+
+/* Project */
+
+#project .img-customer {
+	cursor: pointer;	
+}
+
+#project .col-md-8 {
+	text-align: center;
+}
+
+#project .disabled {
+	pointer-events:none;
+}
+
+#project .ask {
+	font-size: 26px;
+	color: #EF847C;
+	font-family: Satisfy, "Times new Roman";
+	margin-top: 30px;
+	display: block;
+}
+
+
+/* Download */
+
+#download {
+	margin-top:40px;
+	text-align: center;
+}
+	#download img {
+	}

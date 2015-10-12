@@ -1,0 +1,10 @@
+extends base/base
+
+block prepend title
+	- title = 'Semana de la dulzura'
+	- description = 'Acompañá tus regalitos con estas dulces notitas'
+
+block content
+	#download.container
+		a(href='/descargar-semana-de-la-dulzura')
+			+image('el-gorrion-de-paris_semana-de-la-dulzura-descargar', 'Acompañá tus regalitos con estas dulces notitas')(class='download')

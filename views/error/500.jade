@@ -1,0 +1,17 @@
+extends ../base/base
+
+block prepend title
+	- title = 'Error'
+	- description = ''
+
+block indexing
+	+meta('robots', 'noindex, nofollow')
+
+block content
+	.container
+		.row
+			.col-lg-12
+				p.error-404 500
+				pre.error= stack || error
+				p
+					a(href='javascript:history.back()') Volver

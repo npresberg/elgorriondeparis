@@ -1,0 +1,77 @@
+extends base/base
+
+block prepend title
+	- title = 'Inicio'
+	- description = 'El gorrión de París'
+
+block content
+	#home-logo
+		+image('flor-izq')(class='flower left')
+		+image('logo', 'El gorrión de París')
+		+image('flor-der')(class='flower right')
+	#home-features.section
+		.container
+			.row
+				.col-lg-4.col-md-4
+					h3
+						i.fa.fa-envelope
+						| Participaciones
+					p 
+						| Diseños armoniosos, llenos de estilo. Creamos tramas y estampamos papeles a mano.
+						| Elegí el motivo que más te guste, podés ponerle tu color preferido!
+				.col-lg-4.col-md-4
+					h3
+						i.fa.fa-star
+						| Ambientación
+					p
+						| Llenamos el lugar de sorpresas, lo vestimos con las mejores prendas y hacemos que te luzcas en un momento tan especial.
+						| Tu personalidad va a estar presente en cada lugar de la fiesta.
+				.col-lg-4.col-md-4
+					h3
+						i.fa.fa-gift
+						| Detalles
+					p
+						| Buscamos sorprender a los invitados a través de piezas originales, llenas de estilo y mucha actitud.
+						| Desde libros de firmas hasta escenografías, para que te saques las mejores fotos en tu fiesta!
+	#home-phrase.text-center
+		.container
+			.row
+				.col-lg-12
+					p "No, no me arrepiento de nada. Pues mi vida y mis alegrias HOY comienzan contigo."
+					p EDITH PIAF
+	.section
+		.container
+			.row
+				.col-lg-12.text-center
+					h2 Save the date!
+					hr
+				.col-lg-4.col-md-4.col-sm-6
+					a(href='/catalogo/cumplean%CC%83os/colores', title='Colores')
+						img.img-responsive.img-home-portfolio(src='/home/participaciones2.png?1')
+				.col-lg-4.col-md-4.col-sm-6
+					a(href='/catalogo/bodas/acuarelas', title='Acuarelas')
+						img.img-responsive.img-home-portfolio(src='/home/participaciones.png?1')
+				.col-lg-4.col-md-4.col-sm-6
+					a(href='/catalogo/cumplean%CC%83os/conejitos', title='Conejitos')
+						img.img-responsive.img-home-portfolio(src='/home/participaciones3.png?1')
+				.col-lg-4.col-md-4.col-sm-6
+					a(href='/catalogo/cumplean%CC%83os/colores', title='Colores')
+						img.img-responsive.img-home-portfolio(src='/home/pinches.png?1')
+				.col-lg-4.col-md-4.col-sm-6
+					a(href='/catalogo/cumplean%CC%83os/pirata', title='Pirata')
+						img.img-responsive.img-home-portfolio(src='/home/pinches2.png?1')
+				.col-lg-4.col-md-4.col-sm-6
+					a(href='/cosas-lindas/libros-de-firmas/sobrecitos', title='Sobrecitos')
+						img.img-responsive.img-home-portfolio(src='/home/libro-de-firmas.png?1')
+	#home-about.section-colored
+		.container
+			.row
+				.col-lg-6.col-md-6.col-sm-6
+					h2 Hola!
+					p Somos Nadia y Silvana, dos amigas que creamos "El gorrión de París", inspiradas en la música de Edith Piaf, mate de por medio y muchas risas.
+					p Comenzamos nuestro proyecto queriendo agasajar a nuestra familia y amigos, haciendo algo especial para cada uno de ellos en sus momentos más importantes, esos que querés que duren para siempre.
+					p Cuando pensamos en festejar lo que más anhelamos es compartir, unir y contagiar de felicidad a todos los que nos rodean, por eso creemos que es importante generar momentos cálidos y personales que perduren en el tiempo. Haciendo que cada uno, de los invitados de tu fiesta, se sienta identificado con una frase, un chiste o un adorno y de esta manera dejar una huella de sensaciones en su memoria.
+					p Nos enfocamos en ser creativas y divertidas, sin dejar de lado el buen gusto. Ofrecemos piezas gráficas originales con actitud de excelente calidad y terminación, para diferentes tipos de eventos. Hacemos invitaciones, cartelería, ambientación del lugar, decoración de la mesa dulce. Todo con un toque distintivo que hará que tu evento sea único y memorable.
+
+				.col-lg-6.col-md-6.col-sm-6
+					+image('nosotras')(class='img-responsive')

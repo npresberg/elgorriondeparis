@@ -1,0 +1,22 @@
+extends base/base
+
+block prepend title
+	- title = toName(event)
+	- description = toName(section) + ' para '+ toName(event)
+
+block content
+	.container
+		.row
+			.col-lg-12
+				h1.page-header= toName(event)
+
+	#projects.section
+		.container
+			.row
+				each project in projects(section, event)
+					.col-md-6.portfolio-item
+						h3
+							a(href='/#{section}/#{event}/#{project}/')= toName(project)
+						a(href='/#{section}/#{event}/#{project}/')
+							img.img-responsive(src=projectPhoto(section, event, project), title=toName(project))
+						hr

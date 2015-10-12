@@ -1,0 +1,28 @@
+mixin image(src, alt)
+	if src.indexOf('//') === -1
+		- src = '/img/'+src
+	- src = src + '.png'
+	img(title=alt, alt=alt, src=src, width!=attributes.width, height!=attributes.height, class!=attributes.class)
+
+mixin script(src)
+	if src.indexOf('//') === -1
+		- src = '/js/'+src
+	if src.indexOf('?') === -1
+		- src += '.js'
+	script(src=src, type='text/javascript')
+
+mixin link(src)
+	if src.indexOf('//') === -1
+		- src = '/css/'+src
+	if src.indexOf('?') === -1
+		- src += '.css'
+
+	link(href=src, rel='stylesheet', type='text/css')
+
+mixin meta(name, content)
+	meta(name=name, content=content)
+
+mixin json(data, id)
+	ul(id=id)
+		each val, key in data
+			li= key + ': ' + JSON.stringify(val)

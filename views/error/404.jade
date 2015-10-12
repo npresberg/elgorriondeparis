@@ -1,0 +1,20 @@
+extends ../base/base
+
+block prepend title
+	- title = '404'
+	- description = ''
+
+block indexing
+	+meta('robots', 'noindex, nofollow')
+
+block content
+	.container
+		.row
+			.col-lg-12
+				p.error-404 404
+				p.lead 
+					| Lo sentimos la pagina:&nbsp;
+					b= decodeURIComponent(url)
+					| &nbsp;no existe
+				p
+					a(href='javascript:history.back()') Volver

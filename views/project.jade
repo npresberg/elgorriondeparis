@@ -1,0 +1,30 @@
+extends base/base
+
+block prepend title
+	- title = toName(project)
+	- desc = projectDesc(section, event, project).replace(/<[^>]+>/g, '').split('\n').shift()
+	- description = toName(project)+'. '+desc
+
+block content
+	.container
+		.row
+			.col-lg-12
+				h1.page-header
+					a(href='.')= toName(event)
+					small &nbsp;>&nbsp;
+					small= toName(project)
+
+	#project.section
+		.container
+			.row
+				.col-md-8
+					img#large-photo.img-responsive()
+					ul.pagination
+						li.prev: a(href='#') «
+						each url, i in photos(section, event, project)
+							li.item: a(href=url)= i+1
+						li.next: a(href='#') »
+				.col-md-4
+					h3 Descripción
+					!= projectDesc(section, event, project)
+					a.ask(href='/contactanos?p='+encodeURIComponent(project)) Pedí tu presupuesto!
