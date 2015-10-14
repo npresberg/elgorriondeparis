@@ -33,35 +33,11 @@ block content
 		h2.title Encontrá en tu evento: Invitaciones - Souvenirs - Decoración - Candy Bar
 
 		ul.row.logos
-			li.col-sm-4
-				a(href='/eventos/ABCDEF')
-					img.rounded(src='http://placehold.it/250x250')
-					h3 Casamientos
-
-			li.col-sm-4
-				a(href='/eventos/ABCDEF')
-					img.rounded(src='http://placehold.it/250x250')
-					h3 Casamientos
-					
-			li.col-sm-4
-				a(href='/eventos/ABCDEF')
-					img.rounded(src='http://placehold.it/250x250')
-					h3 Casamientos
-					
-			li.col-sm-4
-				a(href='/eventos/ABCDEF')
-					img.rounded(src='http://placehold.it/250x250')
-					h3 Casamientos
-					
-			li.col-sm-4
-				a(href='/eventos/ABCDEF')
-					img.rounded(src='http://placehold.it/250x250')
-					h3 Casamientos
-					
-			li.col-sm-4
-				a(href='/eventos/ABCDEF')
-					img.rounded(src='http://placehold.it/250x250')
-					h3 Casamientos
+			each event in events()
+				li.col-sm-4
+					a(href=event.url)
+						img.rounded(src='http://placehold.it/250x250')
+						h3= event.name
 
 		// PRODUCTS
 
