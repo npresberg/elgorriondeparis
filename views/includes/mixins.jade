@@ -7,14 +7,14 @@ mixin image(src, alt)
 mixin script(src)
 	if src.indexOf('//') === -1
 		- src = '/js/'+src
-	if src.indexOf('?') === -1
+	if src.split('/').pop().indexOf('.js') === -1
 		- src += '.js'
 	script(src=src, type='text/javascript')
 
 mixin link(src)
 	if src.indexOf('//') === -1
 		- src = '/css/'+src
-	if src.indexOf('?') === -1
+	if src.split('/').pop().indexOf('.css') === -1
 		- src += '.css'
 
 	link(href=src, rel='stylesheet', type='text/css')

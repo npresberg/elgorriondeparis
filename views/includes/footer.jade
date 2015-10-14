@@ -1,6 +1,23 @@
-.container
-  hr
-  footer
-    .row
-      .col-lg-12
-        p Copyright © El gorrión de París 2014
+footer#footer.container-fluid
+	.container
+		.row
+			.col-xs-7
+				p Pedinos tu presupuesto
+				form()
+					//- Incluye la url de la pagina actual en un campo escondido
+					input(type='hidden', name='page', value=url)
+					label
+						| Nombre
+						input(type='text')
+					label
+						| E-mail
+						input(type='email')
+					br
+					label
+						| Mensaje
+						textarea
+					br
+					input.pull-right(type='submit' value='Enviar')
+
+			.col-xs-5
+				| Octubre 20% de descuento

@@ -1,0 +1,55 @@
+nav.navbar#topbar
+	.container
+		.row
+			.col-xs-6.col-xs-offset-3
+				a.logo(href='/')
+					img(src='/img/logo.png', alt='El gorrión de Paris')
+		.row
+			.col-xs-3
+				a(href='#footer') Pedi tu presupuesto
+			.col-xs-6
+				ul.nav.nav-justified.navigation
+					li.dropdown
+						a(href="#" data-toggle="dropdown") Eventos 
+							span.caret
+						ul.events.dropdown-menu
+							each event in events()
+								li: a(href=event.url)= event.name
+					li: a(href='#') Servicios
+					li: a(href='#') Nosotras
+					li: a(href='#') Contacto
+			.col-xs-3
+				p Seguinos en
+				ul.social
+					li.facebook-link
+						a(title='Facebook', href='https://www.facebook.com/elgorriondeparis', target='_blank')
+							i.fa.fa-facebook-square.fa-2x
+					li.pinterest-link
+						a(title='Pinterest', href='http://www.pinterest.com/elgorriondeparis/', target='_blank')
+							i.fa.fa-pinterest-square.fa-2x
+					li.google-plus-link
+						a(title='Google+', href='https://plus.google.com/116938248160540138995', target='_blank')
+							i.fa.fa-google-plus-square.fa-2x
+
+
+// Navigation
+//- nav.navbar.navbar-fixed-top
+//- 	.container
+//- 		// Brand and toggle get grouped for better mobile display
+//- 		.navbar-header
+//- 			button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navbar')
+//- 				span.sr-only Toggle navigation
+//- 				span.icon-bar
+//- 				span.icon-bar
+//- 				span.icon-bar
+//- 			a.navbar-brand(href='/')
+//- 				img(src='/img/logo.png', alt='El gorrión de Paris')
+//- 		// Collect the nav links, forms, and other content for toggling
+//- 		#navbar.collapse.navbar-collapse
+//- 			ul.nav.navbar-nav
+//- 				li
+//- 					a(href='#') About
+//- 				li
+//- 					a(href='#') Services
+//- 				li
+//- 					a(href='#') Contact

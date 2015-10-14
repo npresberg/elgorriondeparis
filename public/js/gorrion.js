@@ -1,13 +1,27 @@
 (function(){
 
+	// Activates the Carousel
+	$('.carousel').carousel({ interval: 5000 });
+
+	// Tooltips
+	$.fn.tooltip.Constructor.DEFAULTS.placement = 'auto';
+
+	$('a[title]').tooltip();
+
+	$('img[alt]').each(function() {
+		if (!this.title) this.title = this.alt;
+	}).tooltip();
+
+	$('.tooltip-social').tooltip({ selector: "a[data-toggle=tooltip]" });
+
 	// Project Page
 
 	var all = $('#project .pagination li');
 
 	var items = all.filter('.item').click(function() {
-		select($(this))
+		select($(this));
 		return false;
-	})
+	});
 
 	var prev = all.filter('.prev').click(function() {
 		select(items.filter('.active').prev('.item'));
@@ -22,7 +36,7 @@
 	function select(item) {
 		if (!item.length) return;
 		items.removeClass('active');
-		var item = item.addClass('active');
+		item.addClass('active');
 		$('#large-photo').attr('src', item.find('a').attr('href'));
 
 		var i = items.index(item);
@@ -45,9 +59,5 @@
 
 		return controls.filter('.has-error').length === 0;
 	});
-
-	// Tooltips
-
-	$('a[title]').tooltip();
 
 })();

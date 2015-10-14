@@ -12,26 +12,37 @@ html(xmlns='http://www.w3.org/1999/xhtml', lang='es')
 			meta(http-equiv='X-UA-Compatible', content='IE=edge')
 			meta(http-equiv='content-language', content='es')
 			+meta('viewport', 'width=device-width, initial-scale=1.0')
-			+meta('keywords', 'el,gorrion,de,paris,eventos,fiestas,decoracion,diseño,ambientacion,invitaciones,libro de firmas,fotolibro,toppins')
-			+meta('description', description)
-			+meta('copyright', '2014 El gorrión de París')
-			+meta('author', 'Ariel Flesler')
+			-keywords = keywords || []
+			//- Estos keywords estan en todas, pero cada pagina puede poner mas al principio
+			-keywords.push('gorrion','paris','eventos','fiestas','decoracion','diseño','ambientacion','fotolibro','toppins')
+			+meta('keywords', keywords.join(','))
+			//- Si no se define description en una pagina, se usa el title
+			+meta('description', description || title)
+			+meta('copyright', '2015 El gorrión de París')
+			+meta('author', 'Nadia Presberg')
 			+meta('language', 'es')
 
-			block indexing
-				+meta('robots', 'index, follow')
+		block indexing
+			+meta('robots', 'index, follow')
 
 		block styles
 			link(type='image/x-icon', rel='shortcut icon', href='/favicon.ico')
 			+link('//fonts.googleapis.com/css?family=Satisfy:400,300,600,400italic,700,800')
-			+link('//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min')
+			+link('//netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min')
 			+link('//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome')
-			+link('modern-business')
-			+link('style.css?1')
+			+link('shop-homepage')
+			+link('style')
+			
+			// HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+			// WARNING: Respond.js doesn't work if you view the page via file://
+			<!--[if lt IE 9]>
+			+script('https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv')
+			+script('https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min')
+			<![endif]-->
 
 	block body
 		body
-			include ../includes/top-bar
+			include ../includes/topbar
 			
 			block content
 			
@@ -39,9 +50,8 @@ html(xmlns='http://www.w3.org/1999/xhtml', lang='es')
 
 			block scripts
 				+script('//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min')
-				+script('//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min')
-				+script('modern-business')
-				+script('gorrion.js?1')
+				+script('//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min')
+				+script('gorrion')
 
 			if production
 				script(type='text/javascript').

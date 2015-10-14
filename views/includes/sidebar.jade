@@ -1,0 +1,18 @@
+mixin sidebarlink(obj)
+	//- Poner clase selected si la url del link coincide con la de la pagina
+	-var included = latinize(url).indexOf(latinize(obj.url)) === 0
+	li.list-group-item(class=included ? 'selected' : '')
+		a(href=obj.url)= obj.name
+		block
+
+nav#sidebar
+	ul.list-group
+
+		//- Por cada evento
+		each event in events()
+			+sidebarlink(event)
+				
+				ul.list-group
+					//- Por cada producto de este evento
+					each product in event.items()
+						+sidebarlink(product)
