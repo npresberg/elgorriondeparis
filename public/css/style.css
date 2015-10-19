@@ -133,6 +133,13 @@ h3 {
 		line-height: 24px;
 	}
 
+	/* DROPDOWN */
+
+	.navigation .dropdown-menu {
+		text-align: center;
+		transform: translate(-25%, 0);
+	}
+
 	/* SOCIAL */
 
 	.social {
