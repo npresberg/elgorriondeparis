@@ -12,17 +12,17 @@ nav.navbar#topbar
 			.col-xs-6
 				ul.nav.nav-justified.navigation
 					li.dropdown
-						a(href="#" data-toggle="dropdown") Eventos 
+						a.events(href="#" data-toggle="dropdown", class=activeIf(url, 'eventos')) Eventos 
 							span.caret
 						ul.events.dropdown-menu
 							each event in events()
 								li: a(href=event.url)= event.name
 					li.separator
-					li: a.h3(href='#') Servicios
+					li: a.services(href='/servicios', class=activeIf(url, 'servicios')) Servicios
 					li.separator
-					li: a.h3(href='#') Nosotras
+					li: a.us(href='/nosotras', class=activeIf(url, 'nosotras')) Nosotras
 					li.separator
-					li: a.h3(href='#') Contacto
+					li: a.contact(href='#footer') Contacto
 			.col-xs-3
 				p SEGUINOS EN
 				ul.social

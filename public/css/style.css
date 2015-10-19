@@ -2,6 +2,7 @@ body {
 	/*padding-top: 114px; Si topbar fija */
 	padding: 0;
 	font-family: 'Arvo';
+	font-weight: normal;
 }
 
 /* FONTS */
@@ -28,11 +29,6 @@ body {
 h3 {
 	font-size: 15px;
 	color: #727272;
-}
-
-.navigation a {
-	font-size: 15px;
-	color: black;
 }
 
 
@@ -69,7 +65,13 @@ h3 {
 #topbar {
 	text-align: center;
 	background: white;
+	margin-bottom: 20px;
 }
+
+	#topbar .container {
+		border-bottom: 1px solid #BBB0B0;
+		padding-bottom: 5px;
+	}
 
 	.presupuesto-link {
 		color: black;
@@ -92,8 +94,36 @@ h3 {
 	/* NAVIGATION LINKS */
 
 	.navigation {
-		margin-top: 10px;
+		margin-top: 22px;
 	}
+
+	.navigation a {
+		font-size: 15px;
+		color: black;
+		background-color: white !important;
+	}
+
+		/* COLORFUL NAVIGATION */
+
+		.navigation .events.active,
+		.navigation .events:hover,
+		.navigation .events a:hover {
+			color: #00C4D8;
+		}
+
+		.navigation .services.active,
+		.navigation .services:hover {
+			color: #FFC443;
+		}
+
+		.navigation .us.active,
+		.navigation .us:hover {
+			color: #00CFA7;
+		}
+
+		.navigation .contact:hover {
+			color: #CEAAD4;
+		}
 
 	.navigation .separator:after {
 		content: "·";
@@ -150,15 +180,33 @@ h3 {
 
 	#footer .form-row {
 		padding-top: 20px;
+		padding-bottom: 15px;
 		background-color: #737373;
 	}
 
-	.title {
+	#footer .title {
 		font-size: 33px;
 		font-family: 'Amatic SC';
 		color: #FFF;
 	}
 
+	/* FORM */
+
+	#footer fieldset {
+		margin-bottom: 10px;
+	}
+	
+		#footer .newsletter-label {
+			font-size: 17px;
+		}
+
+		#footer #submit {
+			width: 129px;
+			height: 29px;
+			float: right;
+		}
+
+	/* DISCOUNT */
 
 	#discount {
 		background: url(/img/descuento.png) no-repeat;
@@ -169,7 +217,7 @@ h3 {
 		width: 250px;
 		height: 250px;
 		padding-top: 37px;
-		margin: 20px auto;
+		margin: 0 auto;
 	}
 
 		#discount p {
@@ -178,12 +226,7 @@ h3 {
 			font-size: 52px;
 		}
 
-	#footer #submit {
-		width: 129px;
-		height: 29px;
-		float: right;
-		margin-top: 10px;
-	}
+	/* BOTTOM ROW */
 
 	#footer .bottom-row {
 		background: #6CC3D6;

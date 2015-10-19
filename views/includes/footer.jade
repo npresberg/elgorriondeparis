@@ -14,14 +14,19 @@ footer#footer.container-fluid
 				input(type='hidden', name='page', value=url)
 
 				fieldset.row
-					label.col-xs-6 Nombre
-						input.form-control(type='text', name='name')
-					label.col-xs-6 E-mail
-						input.form-control(type='email', name='from')
+					label.col-xs-6 
+						input.form-control(type='text', name='name', placeholder='Nombre')
+					label.col-xs-6 
+						input.form-control(type='email', name='from', placeholder='E-mail')
 				fieldset.row
-					label.col-xs-12 Mensaje
-						textarea.form-control(name='message', rows=4)
-				input#submit(type='image' src='/img/btn-enviar.png')
+					label.col-xs-12
+						textarea.form-control(name='message', rows=4, placeholder='Mensaje')
+				fieldset.row
+					label.newsletter-label.col-xs-6
+						input(type='checkbox', name='newsletter')
+						| &nbsp;Inscribirme al newsletter
+					.col-xs-6
+						input#submit(type='image' src='/img/btn-enviar.png')
 
 		.col-xs-5
 			#discount
@@ -34,6 +39,6 @@ footer#footer.container-fluid
 		a(href='tel:+541148317537') (11) 4831-7537 
 		| * Escribinos a 
 		a(href='mailto:hola@elgorriondeparis.com.ar') hola@elgorriondeparis.com.ar 
-		| * Seguínos en 
+		| * Seguínos en &nbsp;
 		a.facebook(title='Facebook', href='https://www.facebook.com/elgorriondeparis', target='_blank')
 			i.fa.fa-facebook-square

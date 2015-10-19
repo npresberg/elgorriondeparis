@@ -1,0 +1,4 @@
+- Sidebar colapsable
+- Scroll animado al clickear ancla
+- Hacerlo responsive :(
+- Terminar detalles del formulario
