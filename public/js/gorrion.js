@@ -74,5 +74,19 @@
 		}
 	});
 
+	// Collapsible sidebar
+
+	var events = $('#sidebar > ul > li > a');
+	
+	events.parent().not('.selected').addClass('collapsed');
+
+	events.click(function(e) {
+		e.preventDefault();
+		var item = $(e.currentTarget).parent();
+		item.find('.wrapper').height(item.find('ul').outerHeight());
+		item.toggleClass('collapsed');
+		item.siblings().addClass('collapsed');
+		
+	});
 
 })();

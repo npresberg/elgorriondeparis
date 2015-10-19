@@ -7,14 +7,15 @@ mixin sidebarlink(obj)
 
 .col-md-3
 	nav#sidebar
-		ul.events
+		ul
 
 			//- Por cada evento
 			each event in events()
 				//- Si es un evento, agregar las clases CSS para las barritas
-				+sidebarlink(event).event.barrita(class=event.id)
+				+sidebarlink(event).barrita(class=event.id)
 					
-					ul.products
-						//- Por cada producto de este evento
-						each product in event.items()
-							+sidebarlink(product).product
+					.wrapper
+						ul.products
+							//- Por cada producto de este evento
+							each product in event.items()
+								+sidebarlink(product)

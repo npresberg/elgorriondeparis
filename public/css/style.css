@@ -268,25 +268,37 @@ h3 {
 /* SIDEBAR */
 
 #sidebar {
-	
 }
 	
 	#sidebar ul {
 		list-style: none;
 		padding:0;
 	}
-
-	#sidebar .products {
-		margin: 15px 0 15px 10px;
+		
+	#sidebar a {
+		white-space: nowrap;
+		color: #727272;
 	}
 
 	#sidebar .products .selected a {
 		color:#6CC3D6;
 	}
-		
-	#sidebar a {
-		white-space: nowrap;
-		color: #727272;
+
+	#sidebar .wrapper {
+		overflow: hidden;
+		transition: height 0.6s ease;
+		-ms-transition: height 0.6s ease;
+		-moz-transition: height 0.6s ease;
+		-webkit-transition: height 0.6s ease;
+		margin: 20px 0 0 10px;
+	}
+	
+	#sidebar .wrapper ul {
+		padding-bottom: 20px;
+	}
+
+	#sidebar .collapsed .wrapper {
+		height: 0 !important;
 	}
 
 /* PRODUCT */
