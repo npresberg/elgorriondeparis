@@ -6,13 +6,13 @@
 	// Tooltips
 	$.fn.tooltip.Constructor.DEFAULTS.placement = 'auto';
 
-	$('a[title]').tooltip();
+	/*$('a[title]').tooltip();
 
 	$('img[alt]').each(function() {
 		if (!this.title) this.title = this.alt;
 	}).tooltip();
 
-	$('.tooltip-social').tooltip({ selector: "a[data-toggle=tooltip]" });
+	$('.tooltip-social').tooltip({ selector: "a[data-toggle=tooltip]" });*/
 
 	// Project Page
 
@@ -32,6 +32,10 @@
 		select(items.filter('.active').next('.item'));
 		return false;
 	});
+
+	if (items.length === 1) {
+		items.parent().hide();
+	}
 
 	function select(item) {
 		if (!item.length) return;

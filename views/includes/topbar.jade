@@ -6,8 +6,9 @@ nav.navbar#topbar
 					img(src='/img/logo.png', alt='El gorrión de Paris')
 		.row
 			.col-xs-3
-				p(href='#footer') PEDÍ TU
-				a.tituloblanco(href='#footer') Presupuesto
+				a.presupuesto-link(href='#footer') PEDÍ TU 
+					br
+					img(src='/img/btn-presupuesto.png', alt='PRESUPUESTO')
 			.col-xs-6
 				ul.nav.nav-justified.navigation
 					li.dropdown
@@ -16,8 +17,11 @@ nav.navbar#topbar
 						ul.events.dropdown-menu
 							each event in events()
 								li: a(href=event.url)= event.name
+					li.separator
 					li: a.h3(href='#') Servicios
+					li.separator
 					li: a.h3(href='#') Nosotras
+					li.separator
 					li: a.h3(href='#') Contacto
 			.col-xs-3
 				p SEGUINOS EN

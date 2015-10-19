@@ -8,39 +8,61 @@ body {
 
 /*Títulos*/
 
-.tituloblanco {
-  font-size: 40px;
-  font-family: 'Amatic SC';
-  /*color: #FFF;*/
-  text-align: center;
-}
-
 .titulorosa {
-  font-size: 40px;
-  font-family: 'Amatic SC';
-  color: #FF4264;
-  text-align: center;
-  margin-bottom:10px;
+	font-size: 40px;
+	font-family: 'Amatic SC';
+	color: #FF4264;
+	text-align: center;
+	margin-bottom:20px;
 }
 
 .tituloverde {
-  font-size: 40px;
-  font-family: 'Amatic SC';
-  color: #56CEA7;
-  text-align: center;
-  margin-bottom:10px;
+	font-size: 40px;
+	font-family: 'Amatic SC';
+	color: #56CEA7;
+	text-align: center;
+	margin-bottom:20px;
 }
 
 /*Barritas de colores*/
 h3 {
-  font-size: 15px;
-  color: #727272;
+	font-size: 15px;
+	color: #727272;
 }
 
 .navigation a {
 	font-size: 15px;
-  color: black;
+	color: black;
 }
+
+
+/* BARRITAS */
+
+.barrita {
+	position: relative;
+}
+
+.barrita:before {
+	content:"";
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	position: absolute;
+	top: -15px;
+	left: -15px;
+	right: -15px;
+	bottom: -15px;
+	z-index: -1;
+	pointer-events: none;
+}
+
+.barrita.baby-shower:before { background-image: url(/catalogo/baby-shower/barrita.png); }
+.barrita.bautismos:before { background-image: url(/catalogo/bautismos/barrita.png); }
+.barrita.casamientos:before { background-image: url(/catalogo/casamientos/barrita.png); }
+.barrita.cumple-15:before { background-image: url(/catalogo/cumple-15/barrita.png); }
+.barrita.cumple-adultos:before { background-image: url(/catalogo/cumple-adultos/barrita.png); }
+.barrita.cumple-infantil:before { background-image: url(/catalogo/cumple-infantil/barrita.png); }
+.barrita.sorpresas:before { background-image: url(/catalogo/sorpresas/barrita.png); }
 
 /* TOPBAR */
 
@@ -49,12 +71,18 @@ h3 {
 	background: white;
 }
 
+	.presupuesto-link {
+		color: black;
+		text-align: center;
+	}
+
 	/* LOGO */
 
 	.logo {
 		width: 100px;
 		padding: 10px 0;
 		display: inline-block;
+		margin-top: 20px;
 	}
 
 		.logo img {
@@ -65,6 +93,14 @@ h3 {
 
 	.navigation {
 		margin-top: 10px;
+	}
+
+	.navigation .separator:after {
+		content: "·";
+		font-weight: bold;
+		font-size: 35px;
+		vertical-align: bottom;
+		line-height: 24px;
 	}
 
 	/* SOCIAL */
@@ -108,25 +144,28 @@ h3 {
 
 /* FOOTER */
 #footer {
-	background-color: #737373;
 	color: white;
-	padding: 20px 0 0 0;
 	margin: 0;
 }
 
+	#footer .form-row {
+		padding-top: 20px;
+		background-color: #737373;
+	}
+
 	.title {
 		font-size: 33px;
-  	font-family: 'Amatic SC';
-  	color: #FFF;
+		font-family: 'Amatic SC';
+		color: #FFF;
 	}
 
 
 	#discount {
 		background: url(/img/descuento.png) no-repeat;
 		font-size: 40px;
-  	font-family: 'Amatic SC';
-  	color: #FFF;
-  	text-align: center;
+		font-family: 'Amatic SC';
+		color: #FFF;
+		text-align: center;
 		width: 250px;
 		height: 250px;
 		padding-top: 37px;
@@ -139,10 +178,6 @@ h3 {
 			font-size: 52px;
 		}
 
-	#footer input, #footer textarea {
-		/*width: 100%;*/
-	}
-
 	#footer #submit {
 		width: 129px;
 		height: 29px;
@@ -150,13 +185,13 @@ h3 {
 		margin-top: 10px;
 	}
 
-	.bottom {
+	#footer .bottom-row {
 		background: #6CC3D6;
-  	text-align: center;
+		text-align: center;
 		font-family: 'Amatic SC';
 	}
 
-	.bottom * {
+	#footer .bottom-row * {
 		font-size: 30px;
 		color:white;
 	}
@@ -183,7 +218,33 @@ h3 {
 	
 		.logos img {
 			margin-bottom: 10px;
+			width: 250px;
+			height: 250px;
 		}
+
+/* SIDEBAR */
+
+#sidebar {
+	
+}
+	
+	#sidebar ul {
+		list-style: none;
+		padding:0;
+	}
+
+	#sidebar .products {
+		margin: 15px 0 15px 10px;
+	}
+
+	#sidebar .products .selected a {
+		color:#6CC3D6;
+	}
+		
+	#sidebar a {
+		white-space: nowrap;
+		color: #727272;
+	}
 
 /* PRODUCT */
 
@@ -199,6 +260,7 @@ h3 {
 		#projects p {
 			width: 100%;
 			text-align: center;
+			color: #727272;
 		}
 
 /* PROJECT */

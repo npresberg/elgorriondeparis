@@ -39,41 +39,11 @@ block content
 		h2.titulorosa Encontrá en tu evento: Invitaciones - Souvenirs - Decoración - Candy Bar
 
 		ul.row.logos
-			li.col-sm-4
-				a(href='/eventos/ABCDEF/VWXYZ')
-					img(src='/img/casamientos.jpg')
-					h3 Casamientos
-			
-
-			li.col-sm-4
-				a(href='/eventos/ABCDEF/VWXYZ')
-					img(src='/img/cumple15.jpg')
-					h3 15 años - Bat/Bar Mitzvah
-					
-
-			li.col-sm-4
-				a(href='/eventos/ABCDEF/VWXYZ')
-					img(src='/img/bautismo-1.jpg')
-					h3 Bautismo - 1º añito
-					
-
-			li.col-sm-4
-				a(href='/eventos/ABCDEF/VWXYZ')
-					img(src='/img/cumplechicos.jpg')
-					h3 Cumple Chicos
-					
-
-			li.col-sm-4
-				a(href='/eventos/ABCDEF/VWXYZ')
-					img(src='/img/cumplenotanchicos.jpg')
-					h3 Cumple No tan Chicos
-
-
-			li.col-sm-4
-				a(href='/eventos/ABCDEF/VWXYZ')
-					img(src='/img/sorpresas.jpg')
-					h3 Sorpresas
-					
+			each event in events()
+				li.col-sm-4
+					a(href=event.url)
+						img(src=event.thumb)
+						h3.barrita(class=event.id)= event.name
 
 		// PRODUCTS
 
@@ -82,18 +52,18 @@ block content
 		ul.row.logos
 			li.col-sm-4
 				a(href='/eventos/casamientos/invitaciones')
-					img(src='/img/casamiento-invitaciones.jpg')
+					img(src='/catalogo/casamientos/invitaciones/thumb.jpg')
 					p Invitaciones
-					h3 Casamientos
+					h3.barrita.casamientos Casamientos
 
 			li.col-sm-4
 				a(href='/eventos/cumple-infantil/souvenirs')
-					img(src='/img/souvenirs-cumplechicos.jpg')
+					img(src='/catalogo/cumple-infantil/souvenirs/thumb.jpg')
 					p Souvenirs
-					h3 Cumple Chicos
+					h3.barrita.cumple-infantil Cumple Chicos
 					
 			li.col-sm-4
-				a(href='/eventos/bautismo/candybar')
-					img(src='/img/candybar-bautismo.jpg')
+				a(href='/eventos/bautismos/candybar')
+					img(src='/catalogo/bautismos/candybar/thumb.jpg')
 					p Candy Bar
-					h3 Bautismo - 1º añito
+					h3.barrita.bautismos Bautismo - 1º añito

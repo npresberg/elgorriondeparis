@@ -1,18 +1,20 @@
 mixin sidebarlink(obj)
 	//- Poner clase selected si la url del link coincide con la de la pagina
 	-var included = latinize(url).indexOf(latinize(obj.url)) === 0
-	li.list-group-item(class=included ? 'selected' : '')
-		a(href=obj.url)= obj.name
+	li(class=included ? 'selected' : '')
+		a(href=obj.url, class=attributes.class)= obj.name
 		block
 
-nav#sidebar
-	ul.list-group
+.col-md-3
+	nav#sidebar
+		ul.events
 
-		//- Por cada evento
-		each event in events()
-			+sidebarlink(event)
-				
-				ul.list-group
-					//- Por cada producto de este evento
-					each product in event.items()
-						+sidebarlink(product)
+			//- Por cada evento
+			each event in events()
+				//- Si es un evento, agregar las clases CSS para las barritas
+				+sidebarlink(event).event.barrita(class=event.id)
+					
+					ul.products
+						//- Por cada producto de este evento
+						each product in event.items()
+							+sidebarlink(product).product
