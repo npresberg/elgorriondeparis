@@ -4,7 +4,45 @@
 
 body {
 	/*padding-top: 114px; Si topbar fija */
-	padding:0;
+	padding: 20px;
+	font-family: 'Arvo';
+}
+
+/* FONTS */
+
+/*Títulos*/
+
+.tituloblanco {
+  font-size: 40px;
+  font-family: 'Amatic SC';
+  color: 000;
+  text-align: center;
+}
+
+.titulorosa {
+  font-size: 40px;
+  font-family: 'Amatic SC';
+  color: #FF4264;
+  text-align: center;
+}
+
+.tituloverde {
+  font-size: 40px;
+  font-family: 'Amatic SC';
+  color: #56CEA7;
+  text-align: center;
+}
+
+/*Barritas de colores*/
+h3 {
+  font-size: 15px;
+  color: #727272;
+}
+
+.navigation a {
+	font-size: 15px;
+  	color: black;
+
 }
 
 /* TOPBAR */

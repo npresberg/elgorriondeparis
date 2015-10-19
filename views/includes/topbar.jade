@@ -6,7 +6,8 @@ nav.navbar#topbar
 					img(src='/img/logo.png', alt='El gorrión de Paris')
 		.row
 			.col-xs-3
-				a(href='#footer') Pedi tu presupuesto
+				p(href='#footer') PEDÍ TU
+				a.tituloblanco(href='#footer') Presupuesto
 			.col-xs-6
 				ul.nav.nav-justified.navigation
 					li.dropdown
@@ -15,21 +16,17 @@ nav.navbar#topbar
 						ul.events.dropdown-menu
 							each event in events()
 								li: a(href=event.url)= event.name
-					li: a(href='#') Servicios
-					li: a(href='#') Nosotras
-					li: a(href='#') Contacto
+					li: a.h3(href='#') Servicios
+					li: a.h3(href='#') Nosotras
+					li: a.h3(href='#') Contacto
 			.col-xs-3
-				p Seguinos en
+				p SEGUINOS EN
 				ul.social
 					li.facebook-link
 						a(title='Facebook', href='https://www.facebook.com/elgorriondeparis', target='_blank')
 							i.fa.fa-facebook-square.fa-2x
-					li.pinterest-link
-						a(title='Pinterest', href='http://www.pinterest.com/elgorriondeparis/', target='_blank')
-							i.fa.fa-pinterest-square.fa-2x
-					li.google-plus-link
-						a(title='Google+', href='https://plus.google.com/116938248160540138995', target='_blank')
-							i.fa.fa-google-plus-square.fa-2x
+
+					
 
 
 // Navigation

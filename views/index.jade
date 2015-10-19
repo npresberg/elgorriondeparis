@@ -16,13 +16,19 @@ block content
 						li.active(data-target='#slideshow', data-slide-to='0')
 						li(data-target='#slideshow', data-slide-to='1')
 						li(data-target='#slideshow', data-slide-to='2')
+						li(data-target='#slideshow', data-slide-to='3')
+						li(data-target='#slideshow', data-slide-to='4')
 					.carousel-inner
 						.item.active
-							img.slide-image(src='http://placehold.it/800x300')
+							img.slide-image(src="/img/banner1.jpg")
 						.item
-							img.slide-image(src='http://placehold.it/800x300')
+							img.slide-image(src="/img/banner2.jpg")
 						.item
-							img.slide-image(src='http://placehold.it/800x300')
+							img.slide-image(src="/img/banner3.jpg")
+						.item
+							img.slide-image(src="/img/banner4.jpg")
+						.item
+							img.slide-image(src="/img/banner5.jpg")
 					a.left.carousel-control(href='#slideshow', data-slide='prev')
 						span.glyphicon.glyphicon-chevron-left
 					a.right.carousel-control(href='#slideshow', data-slide='next')
@@ -30,34 +36,64 @@ block content
 		
 		// EVENTS
 
-		h2.title Encontrá en tu evento: Invitaciones - Souvenirs - Decoración - Candy Bar
+		h2.titulorosa Encontrá en tu evento: Invitaciones - Souvenirs - Decoración - Candy Bar
 
 		ul.row.logos
-			each event in events()
-				li.col-sm-4
-					a(href=event.url)
-						img.rounded(src='http://placehold.it/250x250')
-						h3= event.name
+			li.col-sm-4
+				a(href='/eventos/ABCDEF/VWXYZ')
+					img(src='/img/casamientos.jpg')
+					h3 Casamientos
+			
+
+			li.col-sm-4
+				a(href='/eventos/ABCDEF/VWXYZ')
+					img(src='/img/cumple15.jpg')
+					h3 15 años - Bat/Bar Mitzvah
+					
+
+			li.col-sm-4
+				a(href='/eventos/ABCDEF/VWXYZ')
+					img(src='/img/bautismo-1.jpg')
+					h3 Bautismo - 1º añito
+					
+
+			li.col-sm-4
+				a(href='/eventos/ABCDEF/VWXYZ')
+					img(src='/img/cumplechicos.jpg')
+					h3 Cumple Chicos
+					
+
+			li.col-sm-4
+				a(href='/eventos/ABCDEF/VWXYZ')
+					img(src='/img/cumplenotanchicos.jpg')
+					h3 Cumple No tan Chicos
+
+
+			li.col-sm-4
+				a(href='/eventos/ABCDEF/VWXYZ')
+					img(src='/img/sorpresas.jpg')
+					h3 Sorpresas
+					
 
 		// PRODUCTS
 
-		h2.title Enamorate de nuestros productos 100% personalizados
+		h2.tituloverde Enamorate de nuestros productos 100% personalizados
 
 		ul.row.logos
 			li.col-sm-4
 				a(href='/eventos/ABCDEF/VWXYZ')
-					img.rounded(src='http://placehold.it/250x250')
+					img(src='/img/casamiento-invitaciones.jpg')
 					p Invitaciones
 					h3 Casamientos
 
 			li.col-sm-4
 				a(href='/eventos/ABCDEF/VWXYZ')
-					img.rounded(src='http://placehold.it/250x250')
-					p Invitaciones
-					h3 Casamientos
+					img(src='/img/souvenirs-cumplechicos.jpg')
+					p Souvenirs
+					h3 Cumple Chicos
 					
 			li.col-sm-4
 				a(href='/eventos/ABCDEF/VWXYZ')
-					img.rounded(src='http://placehold.it/250x250')
-					p Invitaciones
-					h3 Casamientos
+					img(src='/img/candybar-bautismo.jpg')
+					p Candy Bar
+					h3 Bautismo - 1º añito
