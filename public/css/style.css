@@ -76,20 +76,20 @@ h3 {
 	.presupuesto-link {
 		color: black;
 		text-align: center;
+		white-space: nowrap;
 	}
+		
+		.presupuesto-link img {
+			margin: 0 auto;
+		}
 
 	/* LOGO */
 
 	.logo {
 		width: 100px;
-		padding: 10px 0;
 		display: inline-block;
-		margin-top: 20px;
+		margin-top: 30px;
 	}
-
-		.logo img {
-			width: inherit;
-		}
 
 	/* NAVIGATION LINKS */
 
