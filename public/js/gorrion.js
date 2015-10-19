@@ -33,7 +33,7 @@
 		return false;
 	});
 
-	if (items.length === 1) {
+	if (items.length <= 1) {
 		items.parent().hide();
 	}
 
@@ -41,11 +41,19 @@
 		if (!item.length) return;
 		items.removeClass('active');
 		item.addClass('active');
+		
 		$('#large-photo').attr('src', item.find('a').attr('href'));
 
 		var i = items.index(item);
+		var last = i === items.length - 1;
 		prev.toggleClass('disabled', i === 0);
-		next.toggleClass('disabled', i === items.length - 1);
+		next.toggleClass('disabled', last);
+
+		if (!last) {
+			// Preload next image
+			var nextSrc = item.next().find('a').attr('href');
+			new Image().src = nextSrc;
+		}
 	}
 
 	items.eq(0).click();

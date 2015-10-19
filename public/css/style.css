@@ -100,7 +100,7 @@ h3 {
 	.navigation a {
 		font-size: 15px;
 		color: black;
-		background-color: white !important;
+		background-color: transparent !important;
 	}
 
 		/* COLORFUL NAVIGATION */
