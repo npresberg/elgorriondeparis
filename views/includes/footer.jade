@@ -2,22 +2,30 @@ footer#footer.container-fluid
 	.container
 		.row
 			.col-xs-7
-				p Pedinos tu presupuesto
-				form()
+				p.title Hacenos tu consulta!
+
+				form(method='POST', action='http://e-s.herokuapp.com/form')
+					//- Para despertar a la app en Heroku
+					//-img.hide(src='http://e-s.herokuapp.com/ping')
+
+					input(type='hidden', name='to', value='hola@elgorriondeparis.com.ar')
+					input(type='hidden', name='token', value='eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJFYWFTIiwic3ViIjoiaG9sYUBlbGdvcnJpb25kZXBhcmlzLmNvbS5hciJ9.1bAQda9Ti3UgOFKnZsVduV10UuC3IaE7HwHbpyzS79k')
+					input(type='hidden', name='subject', value='Nuevo contacto')
 					//- Incluye la url de la pagina actual en un campo escondido
 					input(type='hidden', name='page', value=url)
-					label
-						| Nombre
-						input(type='text')
-					label
-						| E-mail
-						input(type='email')
-					br
-					label
-						| Mensaje
-						textarea
-					br
-					input.pull-right(type='submit' value='Enviar')
+
+					fieldset.row
+						label.col-xs-6 Nombre
+							input.form-control(type='text', name='name')
+						label.col-xs-6 E-mail
+							input.form-control(type='email', name='from')
+					fieldset.row
+						label.col-xs-12 Mensaje
+							textarea.form-control(name='message', rows=4)
+					input#submit(type='image' src='/img/btn-enviar.png')
 
 			.col-xs-5
-				| Octubre 20% de descuento
+				#discount
+					p.month Octubre
+					p 20% de
+					p descuento

@@ -1,10 +1,6 @@
-* {
-/*	list-style: none;*/
-}
-
 body {
 	/*padding-top: 114px; Si topbar fija */
-	padding: 20px;
+	padding: 0;
 	font-family: 'Arvo';
 }
 
@@ -15,7 +11,7 @@ body {
 .tituloblanco {
   font-size: 40px;
   font-family: 'Amatic SC';
-  color: 000;
+  /*color: #FFF;*/
   text-align: center;
 }
 
@@ -24,6 +20,7 @@ body {
   font-family: 'Amatic SC';
   color: #FF4264;
   text-align: center;
+  margin-bottom:10px;
 }
 
 .tituloverde {
@@ -31,6 +28,7 @@ body {
   font-family: 'Amatic SC';
   color: #56CEA7;
   text-align: center;
+  margin-bottom:10px;
 }
 
 /*Barritas de colores*/
@@ -41,8 +39,7 @@ h3 {
 
 .navigation a {
 	font-size: 15px;
-  	color: black;
-
+  color: black;
 }
 
 /* TOPBAR */
@@ -117,6 +114,41 @@ h3 {
 	margin: 0;
 }
 
+	.title {
+		font-size: 33px;
+  	font-family: 'Amatic SC';
+  	color: #FFF;
+	}
+
+
+	#discount {
+		background: url(/img/descuento.png) no-repeat;
+		font-size: 40px;
+  	font-family: 'Amatic SC';
+  	color: #FFF;
+  	text-align: center;
+		width: 250px;
+		height: 250px;
+		padding-top: 37px;
+		margin: 20px auto;
+	}
+
+		#discount p {
+			width:100%;
+			margin: 0 0 -27px 0;
+			font-size: 52px;
+		}
+
+	#footer input, #footer textarea {
+		/*width: 100%;*/
+	}
+
+	#footer #submit {
+		width: 129px;
+		height: 29px;
+		float: right;
+		margin-top: 10px;
+	}
 
 /* HOME */
 
@@ -128,7 +160,9 @@ h3 {
 		margin: 40px 0;
 	}
 
-.logos { }
+.logos {
+	padding: 0;
+}
 
 	.logos li {
 		margin-bottom: 20px;
