@@ -74,7 +74,7 @@
 
 	// Animated scroll
 
-	$('a[href^=#]').click(function(e) {
+	$('a[href^=#]:not(.no-scroll)').click(function(e) {
 		e.preventDefault();
 		if (this.hash.length > 1) {
 			var pos = $(this.hash).offset().top;
@@ -94,7 +94,6 @@
 		item.find('.wrapper').height(item.find('ul').outerHeight());
 		item.toggleClass('collapsed');
 		item.siblings().addClass('collapsed');
-		
 	});
 
 })();
