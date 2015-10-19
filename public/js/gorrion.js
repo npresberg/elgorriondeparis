@@ -64,4 +64,15 @@
 		return controls.filter('.has-error').length === 0;
 	});
 
+	// Animated scroll
+
+	$('a[href^=#]').click(function(e) {
+		e.preventDefault();
+		if (this.hash.length > 1) {
+			var pos = $(this.hash).offset().top;
+			$('html,body').animate({scrollTop:pos}, 800);
+		}
+	});
+
+
 })();
