@@ -104,6 +104,15 @@ h3 {
 
 	/* NAVIGATION LINKS */
 
+	@media (min-width: 767px) {
+		/* Center navbar when not on mobiles */
+		#navbar {
+			display: inline-block !important;
+			margin: 0px auto;
+		}
+	}
+
+
 	.navigation {
 		margin-top: 22px;
 	}
@@ -152,8 +161,8 @@ h3 {
 
 	/* DROPDOWN */
 
-	/* Align dropdown links to center on mobiles */
 	@media (max-width: 767px) {
+		/* Align dropdown links to center on mobiles */
 		.navigation .dropdown-menu {
 			text-align: center;
 		}
