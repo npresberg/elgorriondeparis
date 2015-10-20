@@ -11,10 +11,10 @@ block content
 	#product.container
 		.row
 			include includes/sidebar
-			.col-md-9
+			.col-xs-9
 				#projects.row
 					each project in product.items()
-						.col-sm-4
+						.col-xs-4
 							a(href=project.url)
 								img(src=project.thumb())
 								p= project.name

@@ -91,6 +91,17 @@ h3 {
 		margin-top: 30px;
 	}
 
+	/* Move logo to topbar in small mode */
+	@media (max-width: 767px) {
+		.logo {
+			position: absolute;
+			top: 8px;
+			left: 26px;
+			margin: 0;
+			width: 44px;
+		}
+	}
+
 	/* NAVIGATION LINKS */
 
 	.navigation {
@@ -128,16 +139,24 @@ h3 {
 	.navigation .separator:after {
 		content: "·";
 		font-weight: bold;
-		font-size: 35px;
-		vertical-align: bottom;
-		line-height: 24px;
+		font-size: 36px;
+		display: block;
+	}
+
+	/* Hide separators on mobiles and tablets */
+	@media (max-width: 991px) {
+		.navigation .separator {
+			display: none!important;
+		}
 	}
 
 	/* DROPDOWN */
 
-	.navigation .dropdown-menu {
-		text-align: center;
-		transform: translate(-25%, 0);
+	/* Align dropdown links to center on mobiles */
+	@media (max-width: 767px) {
+		.navigation .dropdown-menu {
+			text-align: center;
+		}
 	}
 
 	/* SOCIAL */
@@ -306,6 +325,22 @@ h3 {
 
 	#sidebar .collapsed .wrapper {
 		height: 0 !important;
+	}
+
+	/* Minimalistic sidebar for mobiles */
+	@media (max-width: 767px) {
+		#sidebar .collapsed {
+			display: none;
+		}
+		#sidebar .barrita {
+			display: none;
+		}
+		#sidebar * {
+			margin: 0 !important;
+			white-space: normal !important;
+			word-wrap: break-word;
+			text-align: center;
+		}
 	}
 
 /* PRODUCT */

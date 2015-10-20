@@ -11,7 +11,7 @@ block content
 	#project.container
 		.row
 			include includes/sidebar
-			.photos.col-md-5
+			.photos.col-xs-5
 				img#large-photo.img-responsive
 				ul.pagination
 					li.prev: a(href='#') «
@@ -19,6 +19,6 @@ block content
 						li.item: a(href=url)= i+1
 					li.next: a(href='#') »
 
-			.col-md-4
+			.col-xs-4
 				h3 Modelo
 				!= project.desc

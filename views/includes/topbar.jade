@@ -1,56 +1,39 @@
-nav.navbar#topbar
+nav.navbar.navbar-default#topbar
 	.container
 		.row
-			.col-xs-6.col-xs-offset-3
+			.col-sm-6.col-sm-offset-3
 				a.logo(href='/')
 					img.img-responsive(src='/img/logo.png', alt='El gorrión de Paris')
 		.row
-			.col-xs-3
+			.col-sm-3.hidden-xs
 				a.presupuesto-link(href='#footer') PEDÍ TU 
 					br
 					img.img-responsive(src='/img/btn-presupuesto.png', alt='PRESUPUESTO')
-			.col-xs-6
-				ul.nav.nav-justified.navigation
-					li.dropdown
-						a.events(href="#" data-toggle="dropdown", class=activeIf(url, 'eventos')) Eventos 
-							span.caret
-						ul.events.dropdown-menu
-							each event in events()
-								li: a(href=event.url)= event.name
-					li.separator
-					li: a.services(href='/servicios', class=activeIf(url, 'servicios')) Servicios
-					li.separator
-					li: a.us(href='/nosotras', class=activeIf(url, 'nosotras')) Nosotras
-					li.separator
-					li: a.contact(href='#footer') Contacto
-			.col-xs-3
+			.col-sm-6.col-xs-12
+				.navbar-header
+					button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navbar')
+						span.sr-only Toggle navigation
+						span.icon-bar
+						span.icon-bar
+						span.icon-bar
+				#navbar.collapse.navbar-collapse
+					ul.nav.navbar-nav.navigation
+						li.dropdown
+							a.events.dropdown-toggle(href="#" data-toggle="dropdown", class=activeIf(url, 'eventos')) Eventos 
+								span.caret
+							ul.events.dropdown-menu
+								each event in events()
+									li: a(href=event.url)= event.name
+						li.separator
+						li: a.services(href='/servicios', class=activeIf(url, 'servicios')) Servicios
+						li.separator
+						li: a.us(href='/nosotras', class=activeIf(url, 'nosotras')) Nosotras
+						li.separator
+						li: a.contact.hidden-sm(href='#footer') Contacto
+
+			.col-sm-3.hidden-xs
 				p.hidden-xs SEGUINOS EN
 				ul.social
 					li.facebook-link
 						a(title='Facebook', href='https://www.facebook.com/elgorriondeparis', target='_blank')
 							i.fa.fa-facebook-square.fa-2x
-
-					
-
-
-// Navigation
-//- nav.navbar.navbar-fixed-top
-//- 	.container
-//- 		// Brand and toggle get grouped for better mobile display
-//- 		.navbar-header
-//- 			button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navbar')
-//- 				span.sr-only Toggle navigation
-//- 				span.icon-bar
-//- 				span.icon-bar
-//- 				span.icon-bar
-//- 			a.navbar-brand(href='/')
-//- 				img(src='/img/logo.png', alt='El gorrión de Paris')
-//- 		// Collect the nav links, forms, and other content for toggling
-//- 		#navbar.collapse.navbar-collapse
-//- 			ul.nav.navbar-nav
-//- 				li
-//- 					a(href='#') About
-//- 				li
-//- 					a(href='#') Services
-//- 				li
-//- 					a(href='#') Contact
