@@ -383,3 +383,9 @@ h3 {
 	#project .photos {
 		text-align: center;
 	}
+
+	#project .description a {
+		font-size: 35px;
+		font-family: 'Amatic SC';
+		color: #56CEA7;
+	}

@@ -15,10 +15,10 @@ block content
 				img#large-photo.img-responsive
 				ul.pagination
 					li.prev: a(href='#') Anterior
-					//each url, i in project.items()
-					//	li.item: a(href=url)= i+1
+					each url, i in project.items()
+						li.item.hidden: a(href=url)= i+1
 					li.next: a(href='#') Siguiente
 
-			.col-xs-4
+			.description.col-xs-4
 				h3.titulorosaproject= project.name
 				!= project.desc
