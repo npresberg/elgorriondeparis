@@ -14,10 +14,10 @@ block content
 			.photos.col-xs-5
 				img#large-photo.img-responsive
 				ul.pagination
-					li.prev: a(href='#') «
-					each url, i in project.items()
-						li.item: a(href=url)= i+1
-					li.next: a(href='#') »
+					li.prev: a(href='#') Anterior
+					//each url, i in project.items()
+					//	li.item: a(href=url)= i+1
+					li.next: a(href='#') Siguiente
 
 			.col-xs-4
 				h3.titulorosaproject= project.name
