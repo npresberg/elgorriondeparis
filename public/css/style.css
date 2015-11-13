@@ -17,6 +17,13 @@ body {
 	margin-bottom:20px;
 }
 
+.titulorosaproject {
+	font-size: 35px;
+	font-family: 'Amatic SC';
+	color: #FF4264;
+	text-align: left;
+}
+
 .tituloverde {
 	font-size: 40px;
 	font-family: 'Amatic SC';
