@@ -35,6 +35,7 @@ locals(utils);
 
 if (prod) app.use(require('compression')());
 app.use(require('./lib/middlewares/latinizeURL'));
+app.use('/bajar', require('./lib/middlewares/download'));
 //app.use(express.favicon());
 app.use(express.static(__dirname + '/public'));
 app.use(express.static(__dirname + '/catalogo'));
