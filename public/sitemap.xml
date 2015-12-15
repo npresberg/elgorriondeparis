@@ -8,70 +8,298 @@
 
 <url>
   <loc>http://www.elgorriondeparis.com.ar/</loc>
-  <changefreq>weekly</changefreq>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/bautismos/ambientacion</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/casamientos/ambientacion</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/cumple-adultos/ambientacion</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/cumple-15/ambientacion</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/cumple-infantil/ambientacion</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/sorpresas/baby%20showers</loc>
+  <changefreq>monthly</changefreq>
 </url>
 <url>
   <loc>http://www.elgorriondeparis.com.ar/servicios</loc>
-  <changefreq>weekly</changefreq>
+  <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.elgorriondeparis.com.ar/catalogo/15-an%CC%83os/</loc>
-  <changefreq>weekly</changefreq>
+  <loc>http://www.elgorriondeparis.com.ar/nosotras</loc>
+  <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.elgorriondeparis.com.ar/catalogo/baby-shower/</loc>
-  <changefreq>weekly</changefreq>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/casamientos/invitaciones</loc>
+  <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.elgorriondeparis.com.ar/catalogo/bodas/</loc>
-  <changefreq>weekly</changefreq>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/cumple-infantil/souvenirs</loc>
+  <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.elgorriondeparis.com.ar/catalogo/cumplean%CC%83os/</loc>
-  <changefreq>weekly</changefreq>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/bautismos/candybar</loc>
+  <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.elgorriondeparis.com.ar/contactanos</loc>
-  <changefreq>weekly</changefreq>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/bautismos/estampitas</loc>
+  <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.elgorriondeparis.com.ar/catalogo/cumplean%CC%83os/pirata/</loc>
-  <changefreq>weekly</changefreq>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/bautismos/invitaciones</loc>
+  <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.elgorriondeparis.com.ar/catalogo/15-an%CC%83os/fest/</loc>
-  <changefreq>weekly</changefreq>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/bautismos/souvenirs</loc>
+  <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.elgorriondeparis.com.ar/catalogo/15-an%CC%83os/naif/</loc>
-  <changefreq>weekly</changefreq>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/casamientos/web-site</loc>
+  <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.elgorriondeparis.com.ar/catalogo/cumplean%CC%83os/conejitos/</loc>
-  <changefreq>weekly</changefreq>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/cumple-adultos/invitaciones</loc>
+  <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.elgorriondeparis.com.ar/catalogo/cumplean%CC%83os/picnic/</loc>
-  <changefreq>weekly</changefreq>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/cumple-adultos/souvenirs</loc>
+  <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.elgorriondeparis.com.ar/catalogo/cumplean%CC%83os/colores/</loc>
-  <changefreq>weekly</changefreq>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/cumple-15/invitaciones</loc>
+  <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.elgorriondeparis.com.ar/catalogo/baby-shower/beba/</loc>
-  <changefreq>weekly</changefreq>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/cumple-infantil/candy%20bar</loc>
+  <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.elgorriondeparis.com.ar/catalogo/bodas/acuarelas/</loc>
-  <changefreq>weekly</changefreq>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/cumple-infantil/invitaciones</loc>
+  <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.elgorriondeparis.com.ar/catalogo/bodas/campestre/</loc>
-  <changefreq>weekly</changefreq>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/sorpresas/baby%20showers</loc>
+  <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.elgorriondeparis.com.ar/catalogo/bodas/plumero/</loc>
-  <changefreq>weekly</changefreq>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/sorpresas/fotolibros</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/sorpresas/libros%20de%20nacimiento</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/sorpresas/regalos%20especiales</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/bautismos/ambientacion/monstruitos</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/bautismos/ambientacion/angelical</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/casamientos/ambientacion/acuarelas</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/casamientos/ambientacion/love</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/casamientos/ambientacion/campestre</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/cumple-adultos/ambientacion/60-colorido</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/cumple-adultos/ambientacion/carnaval%20toda%20la%20vida</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/cumple-adultos/ambientacion/dulces%2080</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/cumple-adultos/ambientacion/feria</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/cumple-15/ambientacion/fest</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/cumple-15/ambientacion/naif</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/cumple-infantil/ambientacion/colores</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/cumple-infantil/ambientacion/conejitos</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/cumple-infantil/ambientacion/pirata</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/cumple-infantil/ambientacion/rayado</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/sorpresas/baby%20showers/pilchitas</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/casamientos/invitaciones/acuarelas</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/casamientos/invitaciones/cajitas</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/casamientos/invitaciones/campestre</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/casamientos/invitaciones/love</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/casamientos/invitaciones/plumero</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/casamientos/invitaciones/tiernitos</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/cumple-infantil/souvenirs/thomas%20y%20sus%20amigos</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/bautismos/candybar/angelical</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/bautismos/candybar/el%20arca%20de%20fran</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/bautismos/estampitas/pelos%20locos</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/bautismos/invitaciones/hadita</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/bautismos/invitaciones/monstruitos</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/bautismos/souvenirs/angelical</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/casamientos/web-site/romanticon</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/cumple-adultos/invitaciones/blanco%20y%20negro</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/cumple-adultos/souvenirs/dulces%2080</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/cumple-15/invitaciones/clasica</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/cumple-15/invitaciones/fest</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/cumple-15/invitaciones/naif</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/cumple-infantil/candy%20bar/picnic</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/cumple-infantil/candy%20bar/pirata</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/cumple-infantil/invitaciones/colores</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/cumple-infantil/invitaciones/conejitos</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/cumple-infantil/invitaciones/hadita</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/cumple-infantil/invitaciones/picnic</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/cumple-infantil/invitaciones/pirata</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/cumple-infantil/invitaciones/rayado</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/sorpresas/fotolibros/chiquitita</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/sorpresas/fotolibros/musical</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/sorpresas/libros%20de%20nacimiento/cuervito</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/sorpresas/libros%20de%20nacimiento/hipo</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/sorpresas/regalos%20especiales/dia%20del%20amigo%20cajitas</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.elgorriondeparis.com.ar/eventos/sorpresas/regalos%20especiales/pascuas</loc>
+  <changefreq>monthly</changefreq>
 </url>
 </urlset>
