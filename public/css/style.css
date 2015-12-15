@@ -392,6 +392,6 @@ h3 {
 
 /* SERVICIOS & NOSOTRAS */
 
-#services p, #nosotras p {
+#services p, #nosotras p, #thanks p {
 	text-align: center;
 }

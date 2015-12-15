@@ -1,0 +1,21 @@
+extends base/base
+
+block prepend title
+	- title = 'Gracias por contactarnos'
+	- description = 'Te agradecemos que nos hayas contactado, nos comunicaremos a la brevedad'
+
+block content
+	#thanks.container
+		.row
+			.col-xs-2
+			.col-xs-8
+				h2.titulorosa Gracias por contactarnos!
+				p Nos comunicaremos a la brevedad.
+					br
+					br
+					a.barrita.casamientos(href="javascript:history.back()") Volver
+					
+				br
+				br
+				
+
