@@ -389,3 +389,9 @@ h3 {
 		font-family: 'Amatic SC';
 		color: #56CEA7;
 	}
+
+/* SERVICIOS & NOSOTRAS */
+
+#services p, #nosotras p {
+	text-align: center;
+}
