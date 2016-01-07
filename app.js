@@ -12,8 +12,9 @@ function locals(data) {
 
 var app = global.app = express();
 var prod = process.env.NODE_ENV === 'production';
-//- Locals
 
+
+//- Locals
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
 app.set('x-powered-by', false);
@@ -22,7 +23,7 @@ locals({
 	layout: false,
 	// Pretty printing of html
 	pretty: true,
-	producion: prod
+	production: prod
 });
 
 // Catalog
