@@ -1,0 +1,397 @@
+body {
+	/*padding-top: 114px; Si topbar fija */
+	padding: 0;
+	font-family: 'Arvo';
+	font-weight: normal;
+}
+
+/* FONTS */
+
+/*Títulos*/
+
+.titulorosa {
+	font-size: 40px;
+	font-family: 'Amatic SC';
+	color: #FF4264;
+	text-align: center;
+	margin-bottom:20px;
+}
+
+.titulorosaproject {
+	font-size: 35px;
+	font-family: 'Amatic SC';
+	color: #FF4264;
+	text-align: left;
+}
+
+.tituloverde {
+	font-size: 40px;
+	font-family: 'Amatic SC';
+	color: #56CEA7;
+	text-align: center;
+	margin-bottom:20px;
+}
+
+/*Barritas de colores*/
+h3 {
+	font-size: 15px;
+	color: #727272;
+}
+
+
+/* BARRITAS */
+
+.barrita {
+	position: relative;
+}
+
+.barrita:before {
+	content:"";
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	position: absolute;
+	top: -15px;
+	left: -15px;
+	right: -15px;
+	bottom: -15px;
+	z-index: -1;
+	pointer-events: none;
+}
+
+.barrita.baby-shower:before { background-image: url(/catalogo/baby-shower/barrita.png); }
+.barrita.bautismos:before { background-image: url(/catalogo/bautismos/barrita.png); }
+.barrita.casamientos:before { background-image: url(/catalogo/casamientos/barrita.png); }
+.barrita.cumple-15:before { background-image: url(/catalogo/cumple-15/barrita.png); }
+.barrita.cumple-adultos:before { background-image: url(/catalogo/cumple-adultos/barrita.png); }
+.barrita.cumple-infantil:before { background-image: url(/catalogo/cumple-infantil/barrita.png); }
+.barrita.sorpresas:before { background-image: url(/catalogo/sorpresas/barrita.png); }
+
+/* TOPBAR */
+
+#topbar {
+	text-align: center;
+	background: white;
+	margin-bottom: 20px;
+}
+
+	#topbar .container {
+		border-bottom: 1px solid #BBB0B0;
+		padding-bottom: 5px;
+	}
+
+	.presupuesto-link {
+		color: black;
+		text-align: center;
+		white-space: nowrap;
+	}
+		
+		.presupuesto-link img {
+			margin: 0 auto;
+		}
+
+	/* LOGO */
+
+	.logo {
+		width: 100px;
+		display: inline-block;
+		margin-top: 30px;
+	}
+
+	/* Move logo to topbar in small mode */
+	@media (max-width: 767px) {
+		.logo {
+			position: absolute;
+			top: 8px;
+			left: 26px;
+			margin: 0;
+			width: 44px;
+		}
+	}
+
+	/* NAVIGATION LINKS */
+
+	@media (min-width: 767px) {
+		/* Center navbar when not on mobiles */
+		#navbar {
+			display: inline-block !important;
+			margin: 0px auto;
+		}
+	}
+
+
+	.navigation {
+		margin-top: 22px;
+	}
+
+	.navigation a {
+		font-size: 15px;
+		color: black;
+		background-color: transparent !important;
+	}
+
+		/* COLORFUL NAVIGATION */
+
+		.navigation .events.active,
+		.navigation .events:hover,
+		.navigation .events a:hover {
+			color: #00C4D8;
+		}
+
+		.navigation .services.active,
+		.navigation .services:hover {
+			color: #FFC443;
+		}
+
+		.navigation .us.active,
+		.navigation .us:hover {
+			color: #00CFA7;
+		}
+
+		.navigation .contact:hover {
+			color: #CEAAD4;
+		}
+
+	.navigation .separator:after {
+		content: "·";
+		font-weight: bold;
+		font-size: 36px;
+		display: block;
+	}
+
+	/* Hide separators on mobiles and tablets */
+	@media (max-width: 991px) {
+		.navigation .separator {
+			display: none!important;
+		}
+	}
+
+	/* DROPDOWN */
+
+	@media (max-width: 767px) {
+		/* Align dropdown links to center on mobiles */
+		.navigation .dropdown-menu {
+			text-align: center;
+		}
+	}
+
+	/* SOCIAL */
+
+	.social {
+		display: inline-block;
+		margin: 0 auto;
+		padding: 0;
+	}
+
+		.social li {
+			float: left;
+			margin:0 5px;
+			display: inline-block;
+		}
+
+		.facebook-link a { color: #3b5998; }
+		.pinterest-link a { color: #C9161D; }
+		.google-plus-link a { color: #d14836; }
+		.linkedin-link a { color: #007fb1; }
+		.twitter-link a { color: #39a9e0; }
+
+/* SIDEBAR */
+
+.list-group-item {
+	border: none;
+}
+
+.list-group-item.selected > a {
+	font-weight: bold;
+}
+
+
+/* UTILS */
+
+.rounded {
+	border-radius: 100%;
+	-webkit-border-radius: 100%;
+}
+
+
+/* FOOTER */
+#footer {
+	color: white;
+	margin: 0;
+}
+
+	#footer .form-row {
+		padding-top: 20px;
+		padding-bottom: 15px;
+		background-color: #737373;
+	}
+
+	#footer .title {
+		font-size: 33px;
+		font-family: 'Amatic SC';
+		color: #FFF;
+	}
+
+	/* FORM */
+
+	#footer fieldset {
+		margin-bottom: 10px;
+	}
+	
+		#footer .newsletter-label {
+			font-size: 17px;
+		}
+
+		#footer #submit {
+			width: 129px;
+			height: 29px;
+			float: right;
+		}
+
+	/* DISCOUNT */
+
+	#discount {
+		background: url(/img/descuento.png) no-repeat;
+		font-size: 40px;
+		font-family: 'Amatic SC';
+		color: #FFF;
+		text-align: center;
+		width: 250px;
+		height: 250px;
+		padding-top: 37px;
+		margin: 0 auto;
+	}
+
+		#discount p {
+			width:100%;
+			margin: 0 0 -27px 0;
+			font-size: 52px;
+		}
+
+	/* BOTTOM ROW */
+
+	#footer .bottom-row {
+		background: #6CC3D6;
+		text-align: center;
+		font-family: 'Amatic SC';
+	}
+
+	#footer .bottom-row * {
+		font-size: 30px;
+		color:white;
+	}
+
+/* HOME */
+
+#home {}
+
+	#home .title {
+		width: 100%;
+		text-align: center;
+		margin: 40px 0;
+	}
+
+.logos {
+	padding: 0;
+}
+
+	.logos li {
+		margin-bottom: 20px;
+		text-align: center;
+		list-style: none;
+	}
+	
+		.logos img {
+			margin-bottom: 10px;
+			width: 250px;
+			height: 250px;
+		}
+
+/* SIDEBAR */
+
+#sidebar {
+}
+	
+	#sidebar ul {
+		list-style: none;
+		padding:0;
+	}
+		
+	#sidebar a {
+		white-space: nowrap;
+		color: #727272;
+	}
+
+	#sidebar .products .selected a {
+		color:#6CC3D6;
+	}
+
+	#sidebar .wrapper {
+		overflow: hidden;
+		transition: height 0.6s ease;
+		-ms-transition: height 0.6s ease;
+		-moz-transition: height 0.6s ease;
+		-webkit-transition: height 0.6s ease;
+		margin: 20px 0 0 10px;
+	}
+	
+	#sidebar .wrapper ul {
+		padding-bottom: 20px;
+	}
+
+	#sidebar .collapsed .wrapper {
+		height: 0 !important;
+	}
+
+	/* Minimalistic sidebar for mobiles */
+	@media (max-width: 767px) {
+		#sidebar .collapsed {
+			display: none;
+		}
+		#sidebar .barrita {
+			display: none;
+		}
+		#sidebar * {
+			margin: 0 !important;
+			white-space: normal !important;
+			word-wrap: break-word;
+			text-align: center;
+		}
+	}
+
+/* PRODUCT */
+
+#product {}
+
+	#projects {
+	}
+
+		#projects img {
+			max-width: 100%;
+		}
+
+		#projects p {
+			width: 100%;
+			text-align: center;
+			color: #727272;
+		}
+
+/* PROJECT */
+
+#project {}
+	
+	#project .photos {
+		text-align: center;
+	}
+
+	#project .description a {
+		font-size: 25px;
+		font-family: 'Amatic SC';
+		color: #56CEA7;
+	}
+
+/* SERVICIOS & NOSOTRAS */
+
+#services p, #nosotras p, #thanks p {
+	text-align: center;
+}
