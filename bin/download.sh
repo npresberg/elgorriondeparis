@@ -21,7 +21,7 @@ NODE_ENV=production node app.js >/dev/null &
 
 if [ -d $DIR ]; then
 	cd $DIR
-	git reset --hard ORIG_HEAD
+	git reset --hard HEAD
 	git pull origin $BRANCH --rebase
 else
 	git clone -b $BRANCH --single-branch $REPO $DIR
