@@ -21,7 +21,7 @@ NODE_ENV=production node app.js >/dev/null &
 
 if [ -d $DIR ]; then
 	cd $DIR
-	git reset --hard HEAD
+	git reset --hard ORIG_HEAD
 	git pull origin $BRANCH --rebase
 else
 	git clone -b $BRANCH --single-branch $REPO $DIR
@@ -32,9 +32,9 @@ echo "updating static files..."
 cp -ru $PUBLIC/* .
 head -n5 $PUBLIC/$SITEMAP > $SITEMAP
 
-rmall index.html
+rmall '*.html'
+rmall '*.md'
 rmall name.txt
-rmall desc.md
 
 function download() {
 	path=$1
@@ -68,7 +68,7 @@ function crawl() {
 
 download '/'
 download '/gracias/'
-download '/404'
+download '/404/'
 
 mv '404/index.html' '404.html'
 rm -r '404'
