@@ -49,6 +49,7 @@ function download() {
 	mkdir -p $dir
 	curl --silent --retry 10 --retry-delay 1 $url -o $out
 	# Build sitemap as it downloads
+	#TODO: Use $(git log --date=short -n1 --format="%ad") for <lastMod>, requires commit :(
 	echo "	<url><loc>$DOMAIN$path</loc><changefreq>monthly</changefreq></url>" >> $SITEMAP
 
 	crawl $out
