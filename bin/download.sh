@@ -35,8 +35,8 @@ echo "updating static files..."
 cp -ru $PUBLIC/* .
 head -n5 $PUBLIC/$SITEMAP > $SITEMAP
 
-rmall '*.html'
-rmall '*.md'
+rmall index.html
+rmall desc.md
 rmall name.txt
 
 function download() {
