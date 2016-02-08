@@ -44,8 +44,8 @@
 	<url><loc>http://www.elgorriondeparis.com.ar/eventos/cumple-infantil/candy-bar/pirata/</loc><changefreq>monthly</changefreq></url>
 	<url><loc>http://www.elgorriondeparis.com.ar/eventos/cumple-adultos/souvenirs/dulces-80/</loc><changefreq>monthly</changefreq></url>
 	<url><loc>http://www.elgorriondeparis.com.ar/eventos/cumple-adultos/invitaciones/blanco-y-negro/</loc><changefreq>monthly</changefreq></url>
-	<url><loc>http://www.elgorriondeparis.com.ar/eventos/cumple-15/invitaciones/fest/</loc><changefreq>monthly</changefreq></url>
 	<url><loc>http://www.elgorriondeparis.com.ar/eventos/cumple-15/invitaciones/clasica/</loc><changefreq>monthly</changefreq></url>
+	<url><loc>http://www.elgorriondeparis.com.ar/eventos/cumple-15/invitaciones/fest/</loc><changefreq>monthly</changefreq></url>
 	<url><loc>http://www.elgorriondeparis.com.ar/eventos/cumple-15/invitaciones/naif/</loc><changefreq>monthly</changefreq></url>
 	<url><loc>http://www.elgorriondeparis.com.ar/eventos/casamientos/web-site/romanticon/</loc><changefreq>monthly</changefreq></url>
 	<url><loc>http://www.elgorriondeparis.com.ar/eventos/casamientos/invitaciones/acuarelas/</loc><changefreq>monthly</changefreq></url>
@@ -59,8 +59,8 @@
 	<url><loc>http://www.elgorriondeparis.com.ar/eventos/bautismos/invitaciones/monstruitos/</loc><changefreq>monthly</changefreq></url>
 	<url><loc>http://www.elgorriondeparis.com.ar/eventos/bautismos/estampitas/pelos-locos/</loc><changefreq>monthly</changefreq></url>
 	<url><loc>http://www.elgorriondeparis.com.ar/eventos/bautismos/candy-bar/angelical/</loc><changefreq>monthly</changefreq></url>
-	<url><loc>http://www.elgorriondeparis.com.ar/eventos/bautismos/ambientacion/angelical</loc><changefreq>monthly</changefreq></url>
-	<url><loc>http://www.elgorriondeparis.com.ar/eventos/bautismos/candybar/angelical</loc><changefreq>monthly</changefreq></url>
+	<url><loc>http://www.elgorriondeparis.com.ar/eventos/bautismos/ambientacion/angelical/</loc><changefreq>monthly</changefreq></url>
+	<url><loc>http://www.elgorriondeparis.com.ar/eventos/bautismos/candybar/angelical/</loc><changefreq>monthly</changefreq></url>
 	<url><loc>http://www.elgorriondeparis.com.ar/eventos/bautismos/candy-bar/el-arca-de-fran/</loc><changefreq>monthly</changefreq></url>
 	<url><loc>http://www.elgorriondeparis.com.ar/eventos/sorpresas/baby-showers/pilchitas/</loc><changefreq>monthly</changefreq></url>
 	<url><loc>http://www.elgorriondeparis.com.ar/eventos/sorpresas/baby-showers/torta-de-pañales/</loc><changefreq>monthly</changefreq></url>
@@ -78,5 +78,5 @@
 	<url><loc>http://www.elgorriondeparis.com.ar/eventos/casamientos/ambientacion/campestre/</loc><changefreq>monthly</changefreq></url>
 	<url><loc>http://www.elgorriondeparis.com.ar/eventos/casamientos/ambientacion/love/</loc><changefreq>monthly</changefreq></url>
 	<url><loc>http://www.elgorriondeparis.com.ar/eventos/bautismos/ambientacion/monstruitos/</loc><changefreq>monthly</changefreq></url>
-	<url><loc>http://www.elgorriondeparis.com.ar/gracias</loc><changefreq>monthly</changefreq></url>
+	<url><loc>http://www.elgorriondeparis.com.ar/gracias/</loc><changefreq>monthly</changefreq></url>
 </urlset>
