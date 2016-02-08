@@ -8,7 +8,7 @@ PUBLIC=$SRC/public
 DOMAIN=http://www.elgorriondeparis.com.ar
 LOCAL=http://localhost:8080
 SITEMAP=sitemap.xml
-TODAY=$(date +%y-%m-%d)
+TODAY=$(date +%Y-%m-%d)
 CURL='curl --silent --retry 10 --retry-delay 1'
 
 function killnode() {
