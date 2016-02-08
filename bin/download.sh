@@ -38,7 +38,7 @@ rmall desc.md
 function download() {
 	path=$1
 	dir=.$path
-	out=$dir/index.html
+	out=${dir}index.html
 	if [ -f $out ]; then
 		return
 	fi
