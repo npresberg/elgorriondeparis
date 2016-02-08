@@ -70,7 +70,7 @@ function crawl() {
 }
 
 download '/'
-download '/gracias'
+download '/gracias/'
 
 #wait
 
