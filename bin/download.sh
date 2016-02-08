@@ -6,7 +6,10 @@ DIR=../gorrion-$BRANCH
 SRC=$PWD
 PUBLIC=$SRC/public
 DOMAIN=http://www.elgorriondeparis.com.ar
+LOCAL=http://localhost:8080
 SITEMAP=sitemap.xml
+TODAY=$(date +%y-%m-%d)
+CURL='curl --silent --retry 10 --retry-delay 1'
 
 function killnode() {
 	ps -s | grep '/node' | sed -r 's/ *([0-9]+) .*/\1/' | while read pid; do kill -9 $pid; done
@@ -44,15 +47,27 @@ function download() {
 		return
 	fi
 
-	url=http://localhost:8080$path
+	url=$LOCAL$path
 	echo "downloading $path..."
 	mkdir -p $dir
-	curl --silent --retry 10 --retry-delay 1 $url -o $out
+	$CURL $url -o $out
 	# Build sitemap as it downloads
-	#TODO: Use $(git log --date=short -n1 --format="%ad") for <lastMod>, requires commit :(
-	echo "	<url><loc>$DOMAIN$path</loc><changefreq>monthly</changefreq></url>" >> $SITEMAP
-
+	add_to_sitemap $out $path
+	# Look for other pages
 	crawl $out
+}
+
+function add_to_sitemap() {
+	if git diff $1 >/dev/null; then
+		mod=$TODAY
+	else
+		mod=$(git log --date=short -n1 --format="%ad" $1)
+	fi
+	echo "	<url>" >> $SITEMAP
+	echo "		<loc>$DOMAIN$2</loc>" >> $SITEMAP
+	echo "		<changefreq>monthly</changefreq>" >> $SITEMAP
+	echo "		<lastmod>$mod</lastmod>" >> $SITEMAP
+	echo "	</url>" >> $SITEMAP
 }
 
 function crawl() {
@@ -69,10 +84,7 @@ function crawl() {
 
 download '/'
 download '/gracias/'
-download '/404/'
-
-mv '404/index.html' '404.html'
-rm -r '404'
+$CURL $LOCAL/404 -o 404.html
 
 tail -n1 $PUBLIC/$SITEMAP >> $SITEMAP
 
