@@ -14,12 +14,12 @@
 		<lastmod>2016-02-08</lastmod>
 	</url>
 	<url>
-		<loc>http://www.elgorriondeparis.com.ar/eventos/cumple-15/ambientacion/</loc>
+		<loc>http://www.elgorriondeparis.com.ar/eventos/casamientos/ambientacion/</loc>
 		<changefreq>monthly</changefreq>
 		<lastmod>2016-02-08</lastmod>
 	</url>
 	<url>
-		<loc>http://www.elgorriondeparis.com.ar/eventos/casamientos/ambientacion/</loc>
+		<loc>http://www.elgorriondeparis.com.ar/eventos/cumple-15/ambientacion/</loc>
 		<changefreq>monthly</changefreq>
 		<lastmod>2016-02-08</lastmod>
 	</url>
@@ -69,17 +69,17 @@
 		<lastmod>2016-02-08</lastmod>
 	</url>
 	<url>
-		<loc>http://www.elgorriondeparis.com.ar/eventos/cumple-15/invitaciones/</loc>
-		<changefreq>monthly</changefreq>
-		<lastmod>2016-02-08</lastmod>
-	</url>
-	<url>
 		<loc>http://www.elgorriondeparis.com.ar/eventos/casamientos/invitaciones/</loc>
 		<changefreq>monthly</changefreq>
 		<lastmod>2016-02-08</lastmod>
 	</url>
 	<url>
 		<loc>http://www.elgorriondeparis.com.ar/eventos/casamientos/web-site/</loc>
+		<changefreq>monthly</changefreq>
+		<lastmod>2016-02-08</lastmod>
+	</url>
+	<url>
+		<loc>http://www.elgorriondeparis.com.ar/eventos/cumple-15/invitaciones/</loc>
 		<changefreq>monthly</changefreq>
 		<lastmod>2016-02-08</lastmod>
 	</url>
@@ -209,6 +209,21 @@
 		<lastmod>2016-02-08</lastmod>
 	</url>
 	<url>
+		<loc>http://www.elgorriondeparis.com.ar/eventos/cumple-15/invitaciones/clasica/</loc>
+		<changefreq>monthly</changefreq>
+		<lastmod>2016-02-08</lastmod>
+	</url>
+	<url>
+		<loc>http://www.elgorriondeparis.com.ar/eventos/cumple-15/invitaciones/fest/</loc>
+		<changefreq>monthly</changefreq>
+		<lastmod>2016-02-08</lastmod>
+	</url>
+	<url>
+		<loc>http://www.elgorriondeparis.com.ar/eventos/cumple-15/invitaciones/naif/</loc>
+		<changefreq>monthly</changefreq>
+		<lastmod>2016-02-08</lastmod>
+	</url>
+	<url>
 		<loc>http://www.elgorriondeparis.com.ar/eventos/casamientos/web-site/romanticon/</loc>
 		<changefreq>monthly</changefreq>
 		<lastmod>2016-02-08</lastmod>
@@ -240,21 +255,6 @@
 	</url>
 	<url>
 		<loc>http://www.elgorriondeparis.com.ar/eventos/casamientos/invitaciones/tiernitos/</loc>
-		<changefreq>monthly</changefreq>
-		<lastmod>2016-02-08</lastmod>
-	</url>
-	<url>
-		<loc>http://www.elgorriondeparis.com.ar/eventos/cumple-15/invitaciones/clasica/</loc>
-		<changefreq>monthly</changefreq>
-		<lastmod>2016-02-08</lastmod>
-	</url>
-	<url>
-		<loc>http://www.elgorriondeparis.com.ar/eventos/cumple-15/invitaciones/fest/</loc>
-		<changefreq>monthly</changefreq>
-		<lastmod>2016-02-08</lastmod>
-	</url>
-	<url>
-		<loc>http://www.elgorriondeparis.com.ar/eventos/cumple-15/invitaciones/naif/</loc>
 		<changefreq>monthly</changefreq>
 		<lastmod>2016-02-08</lastmod>
 	</url>
@@ -349,6 +349,16 @@
 		<lastmod>2016-02-08</lastmod>
 	</url>
 	<url>
+		<loc>http://www.elgorriondeparis.com.ar/eventos/cumple-15/ambientacion/fest/</loc>
+		<changefreq>monthly</changefreq>
+		<lastmod>2016-02-08</lastmod>
+	</url>
+	<url>
+		<loc>http://www.elgorriondeparis.com.ar/eventos/cumple-15/ambientacion/naif/</loc>
+		<changefreq>monthly</changefreq>
+		<lastmod>2016-02-08</lastmod>
+	</url>
+	<url>
 		<loc>http://www.elgorriondeparis.com.ar/eventos/casamientos/ambientacion/acuarelas/</loc>
 		<changefreq>monthly</changefreq>
 		<lastmod>2016-02-08</lastmod>
@@ -360,16 +370,6 @@
 	</url>
 	<url>
 		<loc>http://www.elgorriondeparis.com.ar/eventos/casamientos/ambientacion/love/</loc>
-		<changefreq>monthly</changefreq>
-		<lastmod>2016-02-08</lastmod>
-	</url>
-	<url>
-		<loc>http://www.elgorriondeparis.com.ar/eventos/cumple-15/ambientacion/fest/</loc>
-		<changefreq>monthly</changefreq>
-		<lastmod>2016-02-08</lastmod>
-	</url>
-	<url>
-		<loc>http://www.elgorriondeparis.com.ar/eventos/cumple-15/ambientacion/naif/</loc>
 		<changefreq>monthly</changefreq>
 		<lastmod>2016-02-08</lastmod>
 	</url>
