@@ -164,12 +164,12 @@
 		<lastmod>2016-02-08</lastmod>
 	</url>
 	<url>
-		<loc>http://www.elgorriondeparis.com.ar/eventos/cumple-infantil/invitaciones/hadita/</loc>
+		<loc>http://www.elgorriondeparis.com.ar/eventos/cumple-infantil/invitaciones/conejitos/</loc>
 		<changefreq>monthly</changefreq>
 		<lastmod>2016-02-08</lastmod>
 	</url>
 	<url>
-		<loc>http://www.elgorriondeparis.com.ar/eventos/cumple-infantil/invitaciones/conejitos/</loc>
+		<loc>http://www.elgorriondeparis.com.ar/eventos/cumple-infantil/invitaciones/hadita/</loc>
 		<changefreq>monthly</changefreq>
 		<lastmod>2016-02-08</lastmod>
 	</url>
@@ -304,7 +304,12 @@
 		<lastmod>2016-02-08</lastmod>
 	</url>
 	<url>
-		<loc>http://www.elgorriondeparis.com.ar/eventos/sorpresas/baby-showers/torta-de-pañales/</loc>
+		<loc>http://www.elgorriondeparis.com.ar/eventos/sorpresas/baby-showers/torta-de-panales/</loc>
+		<changefreq>monthly</changefreq>
+		<lastmod>2016-02-08</lastmod>
+	</url>
+	<url>
+		<loc>http://www.elgorriondeparis.com.ar/catalogo/sorpresas/baby-showers/torta-de-panales/name.txt</loc>
 		<changefreq>monthly</changefreq>
 		<lastmod>2016-02-08</lastmod>
 	</url>
