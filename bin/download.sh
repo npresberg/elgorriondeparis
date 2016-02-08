@@ -6,6 +6,7 @@ DIR=../gorrion-$BRANCH
 PUBLIC=$PWD/public
 DOMAIN=http://www.elgorriondeparis.com.ar
 SITEMAP=sitemap.xml
+COMMIT_MSG=$1
 
 function killnode() {
 	ps -s | grep node | cut -d' ' -f4 | while read pid; do kill -9 $pid; done
@@ -79,8 +80,8 @@ tail -n1 $PUBLIC/$SITEMAP >> $SITEMAP
 killnode
 
 git add -A
-edited=$(git diff --name-only HEAD | sed -e 's;/index.html;;g' -e 's;^\\./;;g' | sort -u)
-git commit -m "Edited ${edited// /, /}"
+edited=$(git diff --name-only HEAD | sed -e 's;/index.html;;g' -e 's;^\\./;;g' | sort -u | tr ' ' ',')
+git commit -m "${COMMIT_MSG:-$edited}"
 git push origin $BRANCH
 
 exit
