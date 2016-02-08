@@ -86,6 +86,7 @@ download '/'
 download '/gracias/'
 $CURL $LOCAL/404 -o 404.html
 
+# http://www.google.com/webmasters/tools/ping?sitemap=http%3A%2F%2Fwww.elgorriondeparis.com.ar%2Fsitemap.xml
 tail -n1 $PUBLIC/$SITEMAP >> $SITEMAP
 
 killnode
