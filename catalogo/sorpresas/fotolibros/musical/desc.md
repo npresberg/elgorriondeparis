@@ -1,2 +1,0 @@
-La tía de Agus quiso sorprenderla en su cumple de 15 con un regalito muy especial, que contara su historia y que esté lleno de cositas que la representen. Su amor por la música fue la inspiración de éste fotolibro.
-Feliz cumple Agus!

@@ -1,1 +1,0 @@
-Denarius hechos a mano en porcelana fría, más tiernos imposible!

@@ -1,2 +1,0 @@
-Invitaciones súper tiernas que hicimos para el cumple de 1 año de Ámbar. Inspiradas en la temática de cuento, ilustramos a Ámbar como un hadita rodeada de mariposas, un unicornio y el árbol de la vida.
-Muchas gracias a los papás por confiar en nosotras!

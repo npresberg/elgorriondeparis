@@ -1,1 +1,0 @@
-Este álbum fue hecho con mucho amor. La madrina de Franchu quería regalarle algo original en su nacimiento, le pusimos mucha dedicación y este es el hermoso resultado.
