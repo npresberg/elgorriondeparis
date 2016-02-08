@@ -25,9 +25,9 @@ nav.navbar.navbar-default#topbar
 								each event in events()
 									li: a(href=event.url)= event.name
 						li.separator
-						li: a.services(href='/servicios', class=activeIf(url, 'servicios')) Servicios
+						li: a.services(href='/servicios/', class=activeIf(url, 'servicios')) Servicios
 						li.separator
-						li: a.us(href='/nosotras', class=activeIf(url, 'nosotras')) Nosotras
+						li: a.us(href='/nosotras/', class=activeIf(url, 'nosotras')) Nosotras
 						li.separator
 						li: a.contact.hidden-sm(href='#footer') Contacto
 
