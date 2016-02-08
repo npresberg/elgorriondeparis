@@ -68,6 +68,10 @@ function crawl() {
 
 download '/'
 download '/gracias/'
+download '/404'
+
+mv '404/index.html' '404.html'
+rm -r '404'
 
 tail -n1 $PUBLIC/$SITEMAP >> $SITEMAP
 
