@@ -62,14 +62,20 @@
 
 	var emailRegex = /^[^@]+@[^.]+\.[^.]/;
 	$('form').submit(function(e) {
-		var controls = $(this).find('.required').removeClass('has-error').each(function(){
+		var any = false;
+		$(this).find('.required').removeClass('has-error').each(function(){
 			var control = $(this);
 			var field = control.children().last();
 			var ok = field.attr('name') === 'email' ? emailRegex.test(field.val()) : field.val();
+			if (!ok && !any) {
+				any = true;
+				// Select first invalid field
+				control.focus();
+			}
 			control.toggleClass('has-error', !ok);
 		});
 
-		return controls.filter('.has-error').length === 0;
+		return !any;
 	});
 
 	// Animated scroll
