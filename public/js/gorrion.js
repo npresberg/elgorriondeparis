@@ -77,6 +77,8 @@
 
 		return !any;
 	});
+	// Change all the generated HTMLs instead
+	$('form').find('[name="name"],[name="from"],[name="message"]').addClass('required');
 
 	// Animated scroll
 
