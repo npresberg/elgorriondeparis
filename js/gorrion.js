@@ -64,15 +64,14 @@
 	$('form').submit(function(e) {
 		var any = false;
 		$(this).find('.required').removeClass('has-error').each(function(){
-			var control = $(this);
-			var field = control.children().last();
+			var field = $(this);
 			var ok = field.attr('name') === 'email' ? emailRegex.test(field.val()) : field.val();
 			if (!ok && !any) {
 				any = true;
 				// Select first invalid field
-				control.focus();
+				field.focus();
 			}
-			control.toggleClass('has-error', !ok);
+			field.toggleClass('has-error', !ok);
 		});
 
 		return !any;
