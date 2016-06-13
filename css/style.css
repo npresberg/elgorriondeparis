@@ -247,6 +247,10 @@ h3 {
 			height: 29px;
 			float: right;
 		}
+		
+		#footer .has-error {
+			background: #F6B1BC;
+		}
 
 	/* DISCOUNT */
 
